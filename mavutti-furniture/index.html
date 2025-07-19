@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mavutti Furniture - Premium Furniture Maker in Nairobi</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .map-container {
+            height: 400px;
+            width: 100%;
+        }
+        
+        .hours-table tr:nth-child(even) {
+            background-color: #f3f4f6;
+        }
+        
+        .furniture-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        @media (max-width: 768px) {
+            .hours-table {
+                font-size: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+<!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+<div class="max-w-6xl mx-auto px-4">
+<div class="flex justify-between">
+<div class="flex space-x-7">
+<div>
+<a class="flex items-center py-4 px-2" href="#">
+<span class="font-semibold text-gray-900 text-2xl">Mavutti Furniture</span>
+</a>
+</div>
+</div>
+<div class="hidden md:flex items-center space-x-1">
+<a class="py-4 px-2 text-green-600 border-b-4 border-green-600 font-semibold" href="#home">Home</a>
+<a class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300" href="#about">About</a>
+<a class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300" href="#products">Products</a>
+<a class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300" href="#contact">Contact</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="outline-none mobile-menu-button">
+<svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" x-show="!showMenu">
+<path d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+<div class="hidden mobile-menu">
+<ul>
+<li><a class="block text-sm px-2 py-4 bg-green-600 text-white font-semibold" href="#home">Home</a></li>
+<li><a class="block text-sm px-2 py-4 hover:bg-green-600 hover:text-white transition duration-300" href="#about">About</a></li>
+<li><a class="block text-sm px-2 py-4 hover:bg-green-600 hover:text-white transition duration-300" href="#products">Products</a></li>
+<li><a class="block text-sm px-2 py-4 hover:bg-green-600 hover:text-white transition duration-300" href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-image text-white py-20 md:py-32" id="home">
+<div class="container mx-auto px-6 text-center">
+<h1 class="text-4xl md:text-6xl font-bold mb-6">Crafting Excellence in Furniture</h1>
+<p class="text-xl md:text-2xl mb-8">Premium custom furniture made with passion in Nairobi</p>
+<a class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block" href="#contact">Get in Touch</a>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-gray-50" id="about">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-6">About Mavutti Furniture</h2>
+<p class="text-gray-600 mb-4">Located in the heart of Nairobi on Jogoo Road, Mavutti Furniture has been crafting high-quality, custom furniture pieces for discerning clients since our founding.</p>
+<p class="text-gray-600 mb-4">Our skilled artisans combine traditional craftsmanship with modern design to create furniture that stands the test of time.</p>
+<p class="text-gray-600 mb-6">We take pride in every piece we create, ensuring exceptional quality and attention to detail in every step of our process.</p>
+<div class="flex items-center text-green-600">
+<i class="fas fa-phone-alt mr-2"></i>
+<span class="font-semibold">+254 701 649487</span>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<h3 class="text-xl font-semibold mb-4">Business Hours</h3>
+<table class="w-full hours-table">
+<tr class="border-b">
+<td class="py-2 font-medium">Monday</td>
+<td class="py-2 text-right">8 AM to 5:30 PM</td>
+</tr>
+<tr class="border-b">
+<td class="py-2 font-medium">Tuesday</td>
+<td class="py-2 text-right">8 AM to 5:30 PM</td>
+</tr>
+<tr class="border-b">
+<td class="py-2 font-medium">Wednesday</td>
+<td class="py-2 text-right">8 AM to 5:30 PM</td>
+</tr>
+<tr class="border-b">
+<td class="py-2 font-medium">Thursday</td>
+<td class="py-2 text-right">8 AM to 5:30 PM</td>
+</tr>
+<tr class="border-b">
+<td class="py-2 font-medium">Friday</td>
+<td class="py-2 text-right">8 AM to 5:30 PM</td>
+</tr>
+<tr class="border-b">
+<td class="py-2 font-medium">Saturday</td>
+<td class="py-2 text-right">8 AM to 5:30 PM</td>
+</tr>
+<tr>
+<td class="py-2 font-medium">Sunday</td>
+<td class="py-2 text-right">8 AM to 5:30 PM</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Section -->
+<section class="py-16" id="products">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Furniture Collections</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="furniture-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500">
+<img alt="Living Room Furniture" class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Living Room Collection</h3>
+<p class="text-gray-600 mb-4">Elegant sofas, coffee tables, and entertainment units designed for comfort and style.</p>
+<a class="text-green-600 hover:text-green-800 font-medium" href="#contact">Inquire Now →</a>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="furniture-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500">
+<img alt="Bedroom Furniture" class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=764&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Bedroom Collection</h3>
+<p class="text-gray-600 mb-4">Luxurious beds, wardrobes, and nightstands for your perfect sanctuary.</p>
+<a class="text-green-600 hover:text-green-800 font-medium" href="#contact">Inquire Now →</a>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="furniture-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500">
+<img alt="Office Furniture" class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=658&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Office Collection</h3>
+<p class="text-gray-600 mb-4">Professional desks, chairs, and storage solutions for productive workspaces.</p>
+<a class="text-green-600 hover:text-green-800 font-medium" href="#contact">Inquire Now →</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<p class="text-gray-600 mb-6">We also create custom furniture pieces tailored to your specific needs and preferences.</p>
+<a class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block" href="#contact">Request Custom Design</a>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-gray-50" id="contact">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Visit Our Showroom</h2>
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+<div class="mb-4 flex items-start">
+<i class="fas fa-map-marker-alt text-green-600 mt-1 mr-3"></i>
+<div>
+<h4 class="font-medium">Address</h4>
+<p class="text-gray-600">Jogoo Rd, Nairobi, Kenya</p>
+</div>
+</div>
+<div class="mb-4 flex items-start">
+<i class="fas fa-phone-alt text-green-600 mt-1 mr-3"></i>
+<div>
+<h4 class="font-medium">Phone</h4>
+<p class="text-gray-600">+254 701 649487</p>
+</div>
+</div>
+<div class="mb-4 flex items-start">
+<i class="fas fa-clock text-green-600 mt-1 mr-3"></i>
+<div>
+<h4 class="font-medium">Hours</h4>
+<p class="text-gray-600">Monday - Sunday: 8 AM to 5:30 PM</p>
+</div>
+</div>
+<div class="mt-6">
+<a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" href="https://www.google.com/maps/search/?api=1&amp;query=Mavutti%20Furniture&amp;query_place_id=ChIJZf3Y294QLxgRBmPUy_46f9U" target="_blank">
+<i class="fas fa-map-marked-alt mr-2"></i>
+<span>View on Google Maps</span>
+</a>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="map-container rounded-lg shadow-md overflow-hidden">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808516858863!2d36.87395!3d-1.29706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10dedbd8fd65%3A0xd57f3afecbd46306!2sMavutti%20Furniture!5e0!3m2!1sen!2ske!4v1689876543210!5m2!1sen!2ske" style="border:0;" width="100%">
+</iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<h3 class="text-xl font-bold">Mavutti Furniture</h3>
+<p class="text-gray-400">Quality craftsmanship since day one</p>
+</div>
+<div class="flex space-x-6">
+<a class="text-gray-400 hover:text-white transition duration-300" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="text-gray-400 hover:text-white transition duration-300" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="text-gray-400 hover:text-white transition duration-300" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400 text-sm">
+<p>© 2023 Mavutti Furniture. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Mobile menu toggle
+        const btn = document.querySelector(".mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!menu.classList.contains('hidden')) {
+                    menu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
