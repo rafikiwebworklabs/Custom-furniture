@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wilmer Woodwork And Soft Furnishings Workshop | Custom Furniture Nairobi</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+        }
+        
+        .map-container {
+            height: 400px;
+            width: 100%;
+        }
+        
+        .hours-table tr:nth-child(even) {
+            background-color: #f3f4f6;
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .floating-button {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-amber-900 text-white shadow-lg sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<i class="fas fa-couch text-2xl"></i>
+<span class="text-xl font-bold">Wilmer Woodwork</span>
+</div>
+<div class="hidden md:flex space-x-6">
+<a class="hover:text-amber-200 transition" href="#home">Home</a>
+<a class="hover:text-amber-200 transition" href="#about">About</a>
+<a class="hover:text-amber-200 transition" href="#services">Services</a>
+<a class="hover:text-amber-200 transition" href="#contact">Contact</a>
+</div>
+<button class="md:hidden text-xl" id="menu-toggle">
+<i class="fas fa-bars"></i>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div class="md:hidden hidden bg-amber-800" id="mobile-menu">
+<div class="px-2 pt-2 pb-3 space-y-1">
+<a class="block px-3 py-2 hover:bg-amber-700 rounded" href="#home">Home</a>
+<a class="block px-3 py-2 hover:bg-amber-700 rounded" href="#about">About</a>
+<a class="block px-3 py-2 hover:bg-amber-700 rounded" href="#services">Services</a>
+<a class="block px-3 py-2 hover:bg-amber-700 rounded" href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-image flex items-center justify-center text-white fade-in" id="home">
+<div class="text-center px-4">
+<h1 class="text-4xl md:text-6xl font-bold mb-4">Wilmer Woodwork</h1>
+<p class="text-xl md:text-2xl mb-8">Crafting Excellence in Furniture Since 1995</p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<a class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105" href="#contact">
+                    Contact Us
+                </a>
+<a class="bg-white hover:bg-gray-100 text-amber-900 px-6 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105" href="#services">
+                    Our Services
+                </a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-white" id="about">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">About Our Workshop</h2>
+<div class="w-20 h-1 bg-amber-600 mx-auto mb-6"></div>
+<p class="text-gray-600 max-w-3xl mx-auto">
+                    Wilmer Woodwork And Soft Furnishings Workshop has been serving Nairobi with high-quality custom furniture since 1995. 
+                    Our skilled craftsmen combine traditional techniques with modern designs to create pieces that last generations.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="order-2 md:order-1">
+<h3 class="text-2xl font-semibold text-amber-800 mb-4">Our Story</h3>
+<p class="text-gray-600 mb-4">
+                        Founded by master carpenter Wilmer Ng'ang'a, our workshop started as a small family business on Ngong Road. 
+                        Over the years, we've grown into one of Nairobi's most trusted furniture makers, known for our attention to detail and commitment to quality.
+                    </p>
+<p class="text-gray-600 mb-4">
+                        We source only the finest materials, including sustainably harvested hardwoods and premium fabrics, ensuring our products stand the test of time.
+                    </p>
+<div class="flex items-center mt-6">
+<div class="mr-4">
+<div class="bg-amber-100 text-amber-800 rounded-full w-16 h-16 flex items-center justify-center">
+<i class="fas fa-award text-2xl"></i>
+</div>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">4.6 Star Rating</h4>
+<p class="text-gray-600">Rated by our satisfied customers</p>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="relative rounded-lg overflow-hidden shadow-xl">
+<img alt="Workshop interior" class="w-full h-auto rounded-lg transition duration-500 hover:scale-105" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=774&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
+<div class="absolute bottom-0 left-0 p-6 text-white">
+<h3 class="text-xl font-bold">Our Workshop</h3>
+<p>Ngong Road, Nairobi</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-16 bg-gray-50" id="services">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">Our Services</h2>
+<div class="w-20 h-1 bg-amber-600 mx-auto mb-6"></div>
+<p class="text-gray-600 max-w-3xl mx-auto">
+                    We specialize in custom furniture design and manufacturing, offering a wide range of services to meet your home and office needs.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+<div class="text-amber-600 mb-4">
+<i class="fas fa-couch text-4xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Custom Furniture</h3>
+<p class="text-gray-600">
+                        Bespoke furniture pieces tailored to your exact specifications, from dining tables to bedroom sets.
+                    </p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+<div class="text-amber-600 mb-4">
+<i class="fas fa-home text-4xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Soft Furnishings</h3>
+<p class="text-gray-600">
+                        Custom curtains, cushions, and upholstery services to complement your furniture.
+                    </p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+<div class="text-amber-600 mb-4">
+<i class="fas fa-building text-4xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Office Furniture</h3>
+<p class="text-gray-600">
+                        Professional workstations, conference tables, and reception furniture for your business.
+                    </p>
+</div>
+</div>
+<div class="mt-12 text-center">
+<h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Process</h3>
+<div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-8">
+<div class="flex flex-col items-center max-w-xs">
+<div class="bg-amber-100 text-amber-800 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+<span class="text-xl font-bold">1</span>
+</div>
+<h4 class="font-semibold mb-2">Consultation</h4>
+<p class="text-gray-600 text-sm">We discuss your needs, preferences, and budget</p>
+</div>
+<div class="flex flex-col items-center max-w-xs">
+<div class="bg-amber-100 text-amber-800 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+<span class="text-xl font-bold">2</span>
+</div>
+<h4 class="font-semibold mb-2">Design</h4>
+<p class="text-gray-600 text-sm">Our designers create sketches and 3D renderings</p>
+</div>
+<div class="flex flex-col items-center max-w-xs">
+<div class="bg-amber-100 text-amber-800 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+<span class="text-xl font-bold">3</span>
+</div>
+<h4 class="font-semibold mb-2">Crafting</h4>
+<p class="text-gray-600 text-sm">Master craftsmen build your furniture by hand</p>
+</div>
+<div class="flex flex-col items-center max-w-xs">
+<div class="bg-amber-100 text-amber-800 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+<span class="text-xl font-bold">4</span>
+</div>
+<h4 class="font-semibold mb-2">Delivery</h4>
+<p class="text-gray-600 text-sm">Careful delivery and installation in your space</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">Our Work</h2>
+<div class="w-20 h-1 bg-amber-600 mx-auto mb-6"></div>
+<p class="text-gray-600 max-w-3xl mx-auto">
+                    Browse some of our recent projects and get inspired for your next furniture piece.
+                </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+<img alt="Custom sofa" class="w-full h-64 object-cover transition duration-500 hover:scale-110" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80"/>
+</div>
+<div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+<img alt="Dining table" class="w-full h-64 object-cover transition duration-500 hover:scale-110" src="https://images.unsplash.com/photo-1567538096630-e0c55bd6454c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1974&amp;q=80"/>
+</div>
+<div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+<img alt="Bedroom furniture" class="w-full h-64 object-cover transition duration-500 hover:scale-110" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1916&amp;q=80"/>
+</div>
+<div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+<img alt="Office desk" class="w-full h-64 object-cover transition duration-500 hover:scale-110" src="https://images.unsplash.com/photo-1598300042247-d088f8ab3e91?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1932&amp;q=80"/>
+</div>
+<div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+<img alt="Kitchen cabinets" class="w-full h-64 object-cover transition duration-500 hover:scale-110" src="https://images.unsplash.com/photo-1556909114-44eccd27fe01?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80"/>
+</div>
+<div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+<img alt="Bookshelf" class="w-full h-64 object-cover transition duration-500 hover:scale-110" src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80"/>
+</div>
+</div>
+<div class="text-center mt-12">
+<button class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105">
+                    View More Projects
+                </button>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-amber-50" id="contact">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">Contact Us</h2>
+<div class="w-20 h-1 bg-amber-600 mx-auto mb-6"></div>
+<p class="text-gray-600 max-w-3xl mx-auto">
+                    Visit our workshop or get in touch to discuss your custom furniture needs.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<div class="bg-white p-6 rounded-lg shadow-md mb-8">
+<h3 class="text-xl font-semibold mb-4 text-amber-800">Contact Information</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="text-amber-600 mr-4 mt-1">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Address</h4>
+<p class="text-gray-600">5 Wilmer Woodwork And Soft Furnishings Workshop<br/>Ngong Road, Nairobi, Kenya</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="text-amber-600 mr-4 mt-1">
+<i class="fas fa-phone-alt"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Phone</h4>
+<p class="text-gray-600">+254 713 793148</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="text-amber-600 mr-4 mt-1">
+<i class="fas fa-envelope"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Email</h4>
+<p class="text-gray-600">info@wilmerwoodwork.co.ke</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="text-amber-600 mr-4 mt-1">
+<i class="fas fa-clock"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-800">Working Hours</h4>
+<table class="w-full hours-table">
+<tr>
+<td class="py-2 px-2 font-medium">Monday - Friday</td>
+<td class="py-2 px-2">8:00 AM - 5:00 PM</td>
+</tr>
+<tr>
+<td class="py-2 px-2 font-medium">Saturday</td>
+<td class="py-2 px-2">8:00 AM - 12:00 PM</td>
+</tr>
+<tr>
+<td class="py-2 px-2 font-medium">Sunday</td>
+<td class="py-2 px-2">Closed</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-semibold mb-4 text-amber-800">Find Us On Google Maps</h3>
+<div class="map-container rounded-lg overflow-hidden">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.704317999313!2d36.71658!3d-1.31816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1b5b73510bb1%3A0x8eacd33e0fae4fd6!2sWilmer%20Woodwork%20And%20Soft%20Furnishings%20Workshop!5e0!3m2!1sen!2ske!4v1689876543210!5m2!1sen!2ske" style="border:0;" width="100%"></iframe>
+</div>
+</div>
+</div>
+<div>
+<div class="bg-white p-6 rounded-lg shadow-md h-full">
+<h3 class="text-xl font-semibold mb-4 text-amber-800">Send Us a Message</h3>
+<form class="space-y-4" id="contact-form">
+<div>
+<label class="block text-gray-700 mb-1" for="name">Name</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500" id="name" name="name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700 mb-1" for="email">Email</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500" id="email" name="email" type="email"/>
+</div>
+<div>
+<label class="block text-gray-700 mb-1" for="phone">Phone</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500" id="phone" name="phone" type="tel"/>
+</div>
+<div>
+<label class="block text-gray-700 mb-1" for="subject">Subject</label>
+<select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500" id="subject" name="subject">
+<option value="">Select a subject</option>
+<option value="custom-furniture">Custom Furniture Inquiry</option>
+<option value="repair">Furniture Repair</option>
+<option value="upholstery">Upholstery Services</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div>
+<label class="block text-gray-700 mb-1" for="message">Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500" id="message" name="message" rows="5"></textarea>
+</div>
+<div>
+<button class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-semibold w-full transition duration-300" type="submit">
+                                    Send Message
+                                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">What Our Clients Say</h2>
+<div class="w-20 h-1 bg-amber-600 mx-auto mb-6"></div>
+<p class="text-gray-600 max-w-3xl mx-auto">
+                    Don't just take our word for it - hear from our satisfied customers.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-gray-50 p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-amber-500 mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<span class="text-gray-600 text-sm">2 weeks ago</span>
+</div>
+<p class="text-gray-700 mb-4 italic">
+                        "The custom dining table Wilmer made for us is absolutely stunning. The craftsmanship is impeccable and it's the centerpiece of our home."
+                    </p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
+<img alt="Sarah K." class="w-full h-full object-cover" src="https://randomuser.me/api/portraits/women/32.jpg"/>
+</div>
+<div>
+<h4 class="font-semibold">Sarah K.</h4>
+<p class="text-gray-600 text-sm">Karen, Nairobi</p>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-amber-500 mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<span class="text-gray-600 text-sm">1 month ago</span>
+</div>
+<p class="text-gray-700 mb-4 italic">
+                        "We furnished our entire office with Wilmer's pieces. The quality is outstanding and they delivered on time despite our tight deadline."
+                    </p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
+<img alt="James M." class="w-full h-full object-cover" src="https://randomuser.me/api/portraits/men/44.jpg"/>
+</div>
+<div>
+<h4 class="font-semibold">James M.</h4>
+<p class="text-gray-600 text-sm">Westlands, Nairobi</p>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-amber-500 mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<span class="text-gray-600 text-sm">3 months ago</span>
+</div>
+<p class="text-gray-700 mb-4 italic">
+                        "The bedroom set they crafted for us is beautiful and functional. The attention to detail is remarkable. Worth every shilling!"
+                    </p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
+<img alt="Grace W." class="w-full h-full object-cover" src="https://randomuser.me/api/portraits/women/68.jpg"/>
+</div>
+<div>
+<h4 class="font-semibold">Grace W.</h4>
+<p class="text-gray-600 text-sm">Runda, Nairobi</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-16 bg-amber-900 text-white">
+<div class="container mx-auto px-4 text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Space?</h2>
+<p class="text-xl mb-8 max-w-3xl mx-auto">
+                Contact us today for a free consultation and let's create something beautiful together.
+            </p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<a class="bg-white hover:bg-gray-100 text-amber-900 px-8 py-4 rounded-lg font-semibold text-lg transition duration-300 transform hover:scale-105" href="#contact">
+                    Get in Touch
+                </a>
+<a class="border-2 border-white hover:bg-amber-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition duration-300 transform hover:scale-105" href="tel:+254713793148">
+<i class="fas fa-phone-alt mr-2"></i> Call Now
+                </a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<div class="flex items-center space-x-2 mb-4">
+<i class="fas fa-couch text-2xl text-amber-500"></i>
+<span class="text-xl font-bold">Wilmer Woodwork</span>
+</div>
+<p class="text-gray-400 mb-4">
+                        Crafting exceptional custom furniture in Nairobi since 1995.
+                    </p>
+<div class="flex space-x-4">
+<a class="text-gray-400 hover:text-amber-500 transition" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="text-gray-400 hover:text-amber-500 transition" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="text-gray-400 hover:text-amber-500 transition" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="text-gray-400 hover:text-amber-500 transition" href="#">
+<i class="fab fa-pinterest"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-amber-500 transition" href="#home">Home</a></li>
+<li><a class="text-gray-400 hover:text-amber-500 transition" href="#about">About Us</a></li>
+<li><a class="text-gray-400 hover:text-amber-500 transition" href="#services">Services</a></li>
+<li><a class="text-gray-400 hover:text-amber-500 transition" href="#contact">Contact</a></li>
+<li><a class="text-gray-400 hover:text-amber-500 transition" href="#">Gallery</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Services</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-amber-500 transition" href="#">Custom Furniture</a></li>
+<li><a class="text-gray-400 hover:text-amber-500 transition" href="#">Soft Furnishings</a></li>
+<li><a class="text-gray-400 hover:text-amber-500 transition" href="#">Office Furniture</a></li>
+<li><a class="text-gray-400 hover:text-amber-500 transition" href="#">Furniture Repair</a></li>
+<li><a class="text-gray-400 hover:text-amber-500 transition" href="#">Upholstery</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+<ul class="space-y-2 text-gray-400">
+<li class="flex items-start">
+<i class="fas fa-map-marker-alt mt-1 mr-3 text-amber-500"></i>
+<span>5 Wilmer Woodwork, Ngong Road, Nairobi</span>
+</li>
+<li class="flex items-center">
+<i class="fas fa-phone-alt mr-3 text-amber-500"></i>
+<span>+254 713 793148</span>
+</li>
+<li class="flex items-center">
+<i class="fas fa-envelope mr-3 text-amber-500"></i>
+<span>info@wilmerwoodwork.co.ke</span>
+</li>
+<li class="flex items-center">
+<i class="fas fa-clock mr-3 text-amber-500"></i>
+<span>Mon-Fri: 8AM-5PM, Sat: 8AM-12PM</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+<p>© 2023 Wilmer Woodwork And Soft Furnishings Workshop. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:bg-green-600 transition floating-button" href="https://wa.me/254713793148">
+<i class="fab fa-whatsapp text-2xl"></i>
+</a>
+<script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show an alert
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+        
+        // Animation on scroll
+        const animateOnScroll = function() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                }
+            });
+        };
+        
+        // Set initial opacity for fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+        });
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
