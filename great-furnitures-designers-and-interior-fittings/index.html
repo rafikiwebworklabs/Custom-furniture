@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>3 Great Furnitures - Premium Furniture Designers in Nairobi</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+        
+        .map-container {
+            height: 400px;
+            width: 100%;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .opening-hours li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .opening-hours li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+<!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<i class="fas fa-couch text-2xl text-amber-600 mr-2"></i>
+<span class="text-xl font-bold text-gray-800">3 Great Furnitures</span>
+</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-gray-800 hover:text-amber-600 transition" href="#home">Home</a>
+<a class="text-gray-800 hover:text-amber-600 transition" href="#about">About</a>
+<a class="text-gray-800 hover:text-amber-600 transition" href="#services">Services</a>
+<a class="text-gray-800 hover:text-amber-600 transition" href="#gallery">Gallery</a>
+<a class="text-gray-800 hover:text-amber-600 transition" href="#contact">Contact</a>
+</div>
+<button class="md:hidden text-gray-800 focus:outline-none" id="menu-toggle">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-md" id="mobile-menu">
+<a class="block py-2 text-gray-800 hover:text-amber-600 transition" href="#home">Home</a>
+<a class="block py-2 text-gray-800 hover:text-amber-600 transition" href="#about">About</a>
+<a class="block py-2 text-gray-800 hover:text-amber-600 transition" href="#services">Services</a>
+<a class="block py-2 text-gray-800 hover:text-amber-600 transition" href="#gallery">Gallery</a>
+<a class="block py-2 text-gray-800 hover:text-amber-600 transition" href="#contact">Contact</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero flex items-center justify-center text-white" id="home">
+<div class="container mx-auto px-4 text-center">
+<h1 class="text-4xl md:text-6xl font-bold mb-4">Premium Furniture Designers</h1>
+<p class="text-xl md:text-2xl mb-8">Crafting exceptional interiors in Nairobi since 1976</p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<a class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-medium transition" href="#contact">Get a Quote</a>
+<a class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-6 py-3 rounded-lg font-medium transition" href="#gallery">View Gallery</a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-white" id="about">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+<h2 class="text-3xl font-bold text-gray-800 mb-6">About Our Furniture Studio</h2>
+<p class="text-gray-600 mb-4">Founded in 1976, 3 Great Furnitures Designers and Interior Fittings has been a trusted name in Nairobi's furniture manufacturing industry for over four decades.</p>
+<p class="text-gray-600 mb-4">Our team of skilled artisans combines traditional craftsmanship with modern design to create furniture that stands the test of time.</p>
+<p class="text-gray-600 mb-6">Located in Kasarani Constituency, we've earned a 4.9-star rating for our commitment to quality and customer satisfaction.</p>
+<div class="flex items-center">
+<div class="bg-amber-100 text-amber-800 px-4 py-2 rounded-lg mr-4">
+<div class="flex items-center">
+<i class="fas fa-star mr-1"></i>
+<span class="font-bold">4.9</span>
+</div>
+</div>
+<div class="text-gray-600">
+<p>59 reviews</p>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Furniture workshop" class="rounded-lg shadow-lg w-full" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1632&amp;q=80"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-16 bg-gray-50" id="services">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+<div class="text-amber-600 text-4xl mb-4">
+<i class="fas fa-couch"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Custom Furniture</h3>
+<p class="text-gray-600">Bespoke furniture pieces tailored to your exact specifications and style preferences.</p>
+</div>
+<!-- Service 2 -->
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+<div class="text-amber-600 text-4xl mb-4">
+<i class="fas fa-home"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Interior Fittings</h3>
+<p class="text-gray-600">Complete interior solutions including cabinetry, shelving, and built-in furniture.</p>
+</div>
+<!-- Service 3 -->
+<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+<div class="text-amber-600 text-4xl mb-4">
+<i class="fas fa-paint-roller"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Upholstery Services</h3>
+<p class="text-gray-600">Professional reupholstery and restoration of your existing furniture pieces.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-16 bg-white" id="gallery">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Work</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Gallery Item 1 -->
+<div class="gallery-item rounded-lg overflow-hidden shadow-md">
+<img alt="Modern living room" class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"/>
+<div class="p-4 bg-white">
+<h3 class="font-bold text-gray-800">Modern Living Room Set</h3>
+<p class="text-gray-600 text-sm">Custom designed for client in Karen</p>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="gallery-item rounded-lg overflow-hidden shadow-md">
+<img alt="Dining table" class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1583845112208-9735fe289163?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"/>
+<div class="p-4 bg-white">
+<h3 class="font-bold text-gray-800">Solid Wood Dining Table</h3>
+<p class="text-gray-600 text-sm">Handcrafted from local mahogany</p>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="gallery-item rounded-lg overflow-hidden shadow-md">
+<img alt="Bedroom furniture" class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1618221195710-dd6b7fa356f7?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1527&amp;q=80"/>
+<div class="p-4 bg-white">
+<h3 class="font-bold text-gray-800">Master Bedroom Suite</h3>
+<p class="text-gray-600 text-sm">Custom designed storage solutions</p>
+</div>
+</div>
+<!-- Gallery Item 4 -->
+<div class="gallery-item rounded-lg overflow-hidden shadow-md">
+<img alt="Office furniture" class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1617806118233-18e1de247200?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1632&amp;q=80"/>
+<div class="p-4 bg-white">
+<h3 class="font-bold text-gray-800">Executive Office Furniture</h3>
+<p class="text-gray-600 text-sm">For corporate client in Westlands</p>
+</div>
+</div>
+<!-- Gallery Item 5 -->
+<div class="gallery-item rounded-lg overflow-hidden shadow-md">
+<img alt="Kitchen cabinets" class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1374&amp;q=80"/>
+<div class="p-4 bg-white">
+<h3 class="font-bold text-gray-800">Custom Kitchen Cabinetry</h3>
+<p class="text-gray-600 text-sm">With integrated appliances</p>
+</div>
+</div>
+<!-- Gallery Item 6 -->
+<div class="gallery-item rounded-lg overflow-hidden shadow-md">
+<img alt="Outdoor furniture" class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1556909114-44e60c8f9ec5?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"/>
+<div class="p-4 bg-white">
+<h3 class="font-bold text-gray-800">Outdoor Patio Set</h3>
+<p class="text-gray-600 text-sm">Weather-resistant teak construction</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-16 bg-amber-600 text-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+<div class="flex items-center mb-4">
+<div class="text-yellow-300 text-xl mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+<p class="mb-4">"The custom dining table they made for us is absolutely stunning. The craftsmanship is exceptional and it's become the centerpiece of our home."</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center mr-3">
+<i class="fas fa-user"></i>
+</div>
+<div>
+<p class="font-bold">Sarah K.</p>
+<p class="text-sm opacity-80">Karen, Nairobi</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+<div class="flex items-center mb-4">
+<div class="text-yellow-300 text-xl mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+<p class="mb-4">"We've worked with 3 Great Furnitures for our office fit-out and couldn't be happier. Their attention to detail and ability to meet deadlines is impressive."</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center mr-3">
+<i class="fas fa-user-tie"></i>
+</div>
+<div>
+<p class="font-bold">James M.</p>
+<p class="text-sm opacity-80">Westlands, Nairobi</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+<div class="flex items-center mb-4">
+<div class="text-yellow-300 text-xl mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+</div>
+<p class="mb-4">"The team transformed our outdated bedroom furniture into something modern and functional. Their upholstery work is top-notch!"</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center mr-3">
+<i class="fas fa-user"></i>
+</div>
+<div>
+<p class="font-bold">Grace W.</p>
+<p class="text-sm opacity-80">Runda, Nairobi</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-gray-50" id="contact">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Contact Us</h2>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="md:w-1/2">
+<div class="bg-white p-6 rounded-lg shadow-md mb-6">
+<h3 class="text-xl font-bold text-gray-800 mb-4">Visit Our Workshop</h3>
+<div class="flex items-start mb-4">
+<i class="fas fa-map-marker-alt text-amber-600 mt-1 mr-3"></i>
+<p>Kasarani Constituency, Nairobi, Kenya</p>
+</div>
+<div class="map-container">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8543000000003!2d36.89595!3d-1.21793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15785fc1167b%3A0xdb9cac5acbdeab90!2sGREAT%20FURNITURES%20DESIGNERS%20AND%20INTERIOR%20FITTINGS!5e0!3m2!1sen!2ske!4v1689876543210!5m2!1sen!2ske" style="border:0;" width="100%"></iframe>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-bold text-gray-800 mb-4">Opening Hours</h3>
+<ul class="opening-hours">
+<li><span>Monday</span> <span>7:00 AM - 7:00 PM</span></li>
+<li><span>Tuesday</span> <span>7:00 AM - 7:00 PM</span></li>
+<li><span>Wednesday</span> <span>7:00 AM - 7:00 PM</span></li>
+<li><span>Thursday</span> <span>7:00 AM - 7:00 PM</span></li>
+<li><span>Friday</span> <span>7:00 AM - 7:00 PM</span></li>
+<li><span>Saturday</span> <span>7:00 AM - 7:00 PM</span></li>
+<li><span>Sunday</span> <span>7:00 AM - 7:00 PM</span></li>
+</ul>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-bold text-gray-800 mb-4">Get In Touch</h3>
+<form id="contact-form">
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="name">Name</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" id="name" type="text"/>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="email">Email</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" id="email" type="email"/>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="phone">Phone</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" id="phone" type="tel"/>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 mb-2" for="message">Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" id="message" rows="4"></textarea>
+</div>
+<button class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-medium transition w-full" type="submit">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<div class="flex items-center">
+<i class="fas fa-couch text-2xl text-amber-400 mr-2"></i>
+<span class="text-xl font-bold">3 Great Furnitures</span>
+</div>
+<p class="text-gray-400 mt-2">Premium furniture designers in Nairobi since 1976</p>
+</div>
+<div class="flex space-x-6">
+<a class="text-gray-400 hover:text-white transition" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="text-gray-400 hover:text-white transition" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="text-gray-400 hover:text-white transition" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="text-gray-400 hover:text-white transition" href="#">
+<i class="fab fa-pinterest"></i>
+</a>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
+<p>© 2023 3 Great Furnitures Designers and Interior Fittings. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<button class="fixed bottom-6 right-6 bg-amber-600 text-white w-12 h-12 rounded-full shadow-lg hidden" id="back-to-top">
+<i class="fas fa-arrow-up"></i>
+</button>
+<script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
